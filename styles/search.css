@@ -1,0 +1,67 @@
+form {
+  display: flex;
+  align-items: center;
+  margin-block: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  filter: drop-shadow(0 15px 10px var(--dark-gray));
+  -ms-filter: drop-shadow(0 15px 10px var(--dark-gray));
+  -webkit-filter: drop-shadow(0 15px 10px var(--dark-gray));
+}
+
+form input {
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  max-width: 10rem;
+}
+
+form .searchbox button {
+  padding: 1rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  outline: none;
+  max-width: 10rem;
+  background: var(--soft-blue);
+  border-radius: 50px 0 0 50px;
+  cursor: pointer;
+  border: none;
+}
+
+form .searchbox input {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1.2rem;
+  border-radius: 0 50px 50px 0;
+  border: none;
+}
+
+form .filters {
+  flex: 1;
+}
+
+form .filters select {
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  max-width: 10rem;
+  background: var(--light-gray);
+  border-radius: 10px;
+}
+
+@media (max-width: 660px) {
+  form {
+    flex-direction: column;
+  }
+
+  form .filters select {
+    width: 100%;
+  }
+}

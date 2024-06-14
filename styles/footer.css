@@ -1,0 +1,37 @@
+footer {
+  color: var(--white);
+  width: 100%;
+}
+
+footer .address {
+  background: var(--library-green-dark);
+  padding: 2rem;
+}
+
+footer .address div {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+footer .rights {
+  background: var(--black);
+  padding-block: 0.5rem;
+  text-align: center;
+}
+
+.green-text-gradient {
+  background: var(--library-green-dark);
+  background: -webkit-linear-gradient(
+    to left,
+    var(--library-green),
+    var(--library-green)
+  );
+  background: linear-gradient(
+    to left,
+    var(--library-green),
+    var(--library-green)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

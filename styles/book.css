@@ -1,0 +1,132 @@
+.book {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding-inline: 1rem;
+}
+
+.book .info {
+  display: flex;
+}
+
+.book .info .cover {
+  width: 35%;
+  margin: auto;
+}
+
+.book .info .cover img {
+  width: 100%;
+}
+
+.book .info .about {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding: 2rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book .info .about h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.book .info .about .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.book .info .about .row h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: var(--library-green);
+}
+
+.book .info .about .row .price {
+  font-size: 1.2rem;
+  margin-bottom: -1rem;
+  font-weight: bolder;
+}
+
+.book .info .about .categories {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-block: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.book .info .about .lg-description {
+  text-align: justify;
+  color: var(--library-green-dark);
+}
+
+.book .sm-description {
+  margin-block: 1rem;
+  text-align: justify;
+  color: var(--library-green-dark);
+  display: none;
+}
+
+hr {
+  background: var(--library-green);
+  margin-block: 2rem;
+  border: none;
+  height: 5px;
+}
+
+@media (max-width: 1100px) {
+  .book .info .about .lg-description {
+    display: none;
+  }
+
+  .book .sm-description {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .book .info .about h2 {
+    font-size: 3rem;
+  }
+
+  .book .info .about .row {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .book .info .about .row h4 {
+    font-size: 1.5rem;
+  }
+
+  .book .info .about .categories {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .book .info {
+    flex-direction: column;
+  }
+
+  .book .info .cover {
+    width: 70%;
+  }
+
+  .book .info .about {
+    width: 100%;
+  }
+
+  .book .sm-description {
+    margin-block: 0;
+  }
+}

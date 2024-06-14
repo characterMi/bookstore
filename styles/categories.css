@@ -1,0 +1,14 @@
+.active {
+  background-color: var(--dark-gray) !important;
+  transform: scale(0.95) !important;
+}
+
+.active h4 {
+  color: var(--white) !important;
+}
+
+.active img {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  -ms-filter: invert(1);
+}
