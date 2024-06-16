@@ -24,8 +24,7 @@ form input {
 }
 
 form .searchbox button {
-  padding: 1rem;
-  padding-right: 2rem;
+  padding-inline: 0.5rem;
   font-size: 1.2rem;
   outline: none;
   max-width: 10rem;

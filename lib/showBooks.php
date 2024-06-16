@@ -16,7 +16,10 @@ function show_books ($condition, $result) {
                             <h2>".$row['title']."</h2>
                         <div class='main-information'>
                             <p>- ".$row['author']."</p>
-                            <p>".$price."</p>
+                            <div class='price'>
+                                <s>".$price."</s>
+                                <p>رایگان</p>
+                            </div>
                         </div>
                         <p class='description'>".$row['description']."</p>
                         <div class='categories'>";

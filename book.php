@@ -12,10 +12,10 @@
     <meta name="description" content="Library | Book" />
     <title>Library | Book</title>
     <link rel="stylesheet" href="styles/root.css">
-    <link rel="stylesheet" href="styles/base-style.css">
+    <link rel="stylesheet" href="styles/base-styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/book.css">
+    <link rel="stylesheet" href="styles/book-page.css">
 </head>
 <body>
     <!-- اضافه کردن هدر به فایل -->

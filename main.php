@@ -12,7 +12,7 @@
     <meta name="description" content="Library | Homepage" />
     <title>Library | Homepage</title>
     <link rel="stylesheet" href="styles/root.css">
-    <link rel="stylesheet" href="styles/base-style.css">
+    <link rel="stylesheet" href="styles/base-styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
 </head>

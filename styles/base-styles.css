@@ -103,8 +103,16 @@
   padding-block: 1rem;
 }
 
-.books .book-card .about .main-information p {
+.books .book-card .about .main-information .price {
   color: var(--library-green);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.books .book-card .about .main-information .price p {
   font-weight: bolder;
 }
 

@@ -3,6 +3,40 @@
   flex-direction: column;
   margin-top: 2rem;
   padding-inline: 1rem;
+  position: relative;
+}
+
+.book .download {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.book .download svg {
+  background: var(--library-green-dark);
+}
+
+.book .download h4 {
+  background: var(--library-green);
+  width: 0;
+  text-wrap: nowrap;
+  transition: width 300ms ease-in-out;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book .download:hover h4 {
+  width: 140px;
 }
 
 .book .info {
@@ -25,6 +59,7 @@
   padding: 2rem;
   align-items: center;
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 .book .info .about h2 {
@@ -51,6 +86,8 @@
   font-size: 1.2rem;
   margin-bottom: -1rem;
   font-weight: bolder;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .book .info .about .categories {
@@ -62,7 +99,6 @@
   font-weight: 500;
   gap: 0.5rem;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .book .info .about .lg-description {
@@ -110,10 +146,16 @@ hr {
 
   .book .info .about .categories {
     font-size: 1.2rem;
+    width: 100%;
   }
 }
 
 @media (max-width: 700px) {
+  .book .download {
+    position: fixed;
+    top: 90%;
+    left: 1rem;
+  }
   .book .info {
     flex-direction: column;
   }
